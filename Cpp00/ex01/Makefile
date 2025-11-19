@@ -1,12 +1,13 @@
-NAME = megaphone
+NAME = grabPhone
 
 CC = c++
 
-FLAGS = -Wall -Wextra -Werror -std=c++98
+FLAGS = -Wall -Wextra -Werror -std=c++98 -I.
 
-SRCS = megaphone.cpp
+SRCS =	phoneBook.cpp \
+		contact.cpp
 
-OBJS = ${SRCS:%.cpp=%.o}
+OBJS = ${SRCS:.cpp=.o}
 
 all: $(NAME)
 
