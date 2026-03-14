@@ -7,17 +7,25 @@ Zombie::Zombie(const std::string name)
 	this->name = name;
 }
 
-Zombie::Zombie(const Zombie &other){}
+Zombie::Zombie(const Zombie &other)
+{
+	*this = other;
+}
 
-Zombie::Zombie &operator=(const Zombie &other){}
+Zombie &Zombie::operator=(const Zombie &other)
+{
+	if (this == &other)
+		return (*this);
+	this->name = other.name;
+	return (*this);
+}
 
 Zombie::~Zombie()
 {
-	std::cout << this->name << " is now laying on the ground" << std::endl;
-	delete(this);
+	std::cout << this->name << " is laying breathless on the ground." << std::endl;
 }
 
-void	announce(void)
+void	Zombie::announce(void)
 {
 	std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

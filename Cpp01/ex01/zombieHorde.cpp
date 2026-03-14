@@ -1,12 +1,13 @@
-#include "Zombie.h"
+#include "Zombie.hpp"
 
-Zombie* zombieHorde(int N, std::string name)
+Zombie* Zombie::zombieHorde(int N, std::string name)
 {
-	new Zombie[N];
+	Zombie *zombies = new Zombie[N];
 
 	for (int i = 0; i < N; i++)
 	{
-		Zombie[i].name = name;
+		zombies[i].name = name;
+		zombies[i].announce();
 	}
-	return (Zombie);
+	return (zombies);
 }

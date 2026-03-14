@@ -6,12 +6,12 @@
 /*   By: galauren <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 16:03:19 by galauren          #+#    #+#             */
-/*   Updated: 2025/10/20 17:20:22 by galauren         ###   ########.fr       */
+/*   Updated: 2026/03/13 23:20:30 by galauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#import <cctype>
-#import <iostream>
+#include <cctype>
+#include <iostream>
 
 int	main(int ac, char **av)
 {

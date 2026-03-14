@@ -5,19 +5,19 @@ CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRCS =	main.cpp \
-		Zombie.hpp \
 		Zombie.cpp \
 		newZombie.cpp \
 		randomChump.cpp
+
 OBJS = ${SRCS:%.cpp=%.o}
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(OBJS) -o $(NAME)
+	$(CC) $(FLAGS) $(OBJS) -o $(NAME) -I.
 
 %.o: %.cpp
-	$(CC) $(FLAGS) -c $^ -o $@
+	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
 	rm $(OBJS)
