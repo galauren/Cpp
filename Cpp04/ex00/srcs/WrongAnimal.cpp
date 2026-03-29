@@ -10,9 +10,9 @@ WrongAnimal::WrongAnimal(std::string type)
 	this->_type = type;
 }
 
-WrongAnimal::WrongAnimal(const WrongAnimal &other): _type(other._type)
+WrongAnimal::WrongAnimal(const WrongAnimal &other)
 {
-
+	this->_type = other._type;
 }
 
 WrongAnimal	&WrongAnimal::operator=(const WrongAnimal &other)

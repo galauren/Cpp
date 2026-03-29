@@ -6,7 +6,7 @@ Cat::Cat()
 	this->setType("Cat");
 }
 
-Cat::Cat(const Cat &other)
+Cat::Cat(const Cat &other) : Animal(other)
 {
 	this->setType(other.getType());
 }

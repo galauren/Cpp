@@ -10,7 +10,7 @@ Character::Character(std::string name) : _name(name), _equip(0), _trash_size(0)
 	this->_inventory = new AMateria*[MAX_ITEMS];
 	for (int i=0; i < MAX_ITEMS; i++)
 		this->_inventory[i] = NULL;
-	this->_trash = new AMateria*[0];
+	this->_trash = new AMateria*[1];
 }
 
 Character::Character(const Character &other) : _name(other._name), _equip(other._equip),  _trash_size(other._trash_size)

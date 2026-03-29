@@ -7,7 +7,8 @@ Dog::Dog()
 	this->_brain = new Brain();
 }
 
-Dog::Dog(const Dog &other)
+Dog::Dog(const Dog &other) : Animal(other), Brain(other)
+
 {
 	this->setType(other.getType());
 	this->_brain = new Brain(*other._brain);

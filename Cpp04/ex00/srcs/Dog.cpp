@@ -6,7 +6,7 @@ Dog::Dog()
 	this->setType("Dog");
 }
 
-Dog::Dog(const Dog &other)
+Dog::Dog(const Dog &other) : Animal(other)
 {
 	this->setType(other.getType());
 }

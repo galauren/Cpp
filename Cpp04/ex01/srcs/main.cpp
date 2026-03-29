@@ -2,17 +2,7 @@
 # include "Cat.hpp"
 #include "WrongCat.hpp"
 
-
-int main_42()
-{
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
-	delete j;//should not create a leak
-	delete i;
-	return 0;
-}
-
-int my_main()
+int personal_main()
 {
 	const Animal* meta = new Animal();
 	Animal** animals = new Animal*[20];
@@ -44,8 +34,18 @@ int my_main()
 
 }
 
+int main_42()
+{
+	const Animal* j = new Dog();
+	const Animal* i = new Cat();
+
+	delete j;
+	delete i;
+	return 0;
+}
+
 int main()
 {
+	personal_main();
 	// main_42();
-	my_main();
 }
