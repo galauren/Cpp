@@ -3,7 +3,7 @@
 HumanB::HumanB(std::string name): name(name)
 {
 	Weapon hands = Weapon("hands");
-	this->weapon = hands;
+	//this->weapon = &hands;
 	this->weapon->setType("Hands");
 }
 
