@@ -1,7 +1,8 @@
+NAME = fixed
+
 SRC =	main.cpp \
 		Fixed.cpp
 OBJ = $(SRC:.cpp=.o)
-NAME = fixed
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 

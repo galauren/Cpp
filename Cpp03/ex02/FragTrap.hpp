@@ -1,5 +1,4 @@
-#ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+#pragma once
 
 #include "../ex00/ClapTrap.hpp"
 
@@ -10,5 +9,3 @@ class FragTrap : public ClapTrap
         ~FragTrap();
         void highFivesGuys(void);
 };
-
-#endif

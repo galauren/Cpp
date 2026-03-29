@@ -1,5 +1,4 @@
-#ifndef DIAMONTRAP_HPP
-#define DIAMONTRAP_HPP
+#pragma once
 
 #include <string>
 #include <iostream>
@@ -17,6 +16,3 @@ class DiamondTrap : public FragTrap, public ScavTrap
         ~DiamondTrap();
         void whoAmI(void);
 };
-
-#endif
-

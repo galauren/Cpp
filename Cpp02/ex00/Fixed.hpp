@@ -1,17 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Fixed.hpp                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: aghanibe <aghanibe@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/03 14:51:55 by aghanibe          #+#    #+#             */
-/*   Updated: 2026/02/03 15:10:21 by aghanibe         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#ifndef FIXED_HPP
-#define FIXED_HPP
+#pragma once
 
 #include <iostream>
 
@@ -30,5 +17,3 @@ class	Fixed {
 		int					getRawBits(void)const;
 		void				setRawBits(int const raw);
 };
-
-#endif
